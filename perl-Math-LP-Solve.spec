@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Math
 %define		pnam	LP-Solve
-Summary:	Math::LP::Solve - perl wrapper for the lp_solve linear program solver
-Summary(pl):	Math::LP::Solve - interfejs do biblioteki lp_solve, rozwi±zuj±cej problemy liniowe
+Summary:	Math::LP::Solve - Perl wrapper for the lp_solve linear program solver
+Summary(pl):	Math::LP::Solve - interfejs perlowy do biblioteki lp_solve, rozwi±zuj±cej problemy liniowe
 Name:		perl-Math-LP-Solve
 Version:	3.03
 Release:	2
