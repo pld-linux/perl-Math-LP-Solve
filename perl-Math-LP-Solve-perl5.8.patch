@@ -1,0 +1,15 @@
+--- Math-LP-Solve-3.03/Solve.c.orig	Fri Apr  6 13:37:47 2001
++++ Math-LP-Solve-3.03/Solve.c	Thu Mar 20 00:01:45 2003
+@@ -428,8 +428,12 @@
+ extern "C"
+ #endif
+ #ifndef PERL_OBJECT
++#ifndef MULTIPLICITY
+ SWIGEXPORT(void) boot_Math__LP__Solve(CV* cv);
+ #else
++SWIGEXPORT(void) boot_Math__LP__Solve(pTHXo_ CV* cv);
++#endif
++#else
+ SWIGEXPORT(void) boot_Math__LP__Solve(CV *cv, CPerlObj *);
+ #endif
+ 
