@@ -10,7 +10,8 @@ Summary(pl):	Math::LP::Solve - interfejs perlowy do biblioteki lp_solve, rozwi±z
 Name:		perl-Math-LP-Solve
 Version:	3.03
 Release:	2
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	358c56ca0d40a300cb5fd132c90fbd3e
