@@ -17,7 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 Patch0:		%{name}-system-lpk.patch
 Patch1:		%{name}-perl5.8.patch
 # not ready for lp_solve 4.0
-BuildRequires:	lp_solve-devel = 3.2-2
+BuildRequires:	lp_solve3-devel >= 3.2
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
