@@ -13,6 +13,7 @@ Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	358c56ca0d40a300cb5fd132c90fbd3e
 Patch0:		%{name}-system-lpk.patch
 Patch1:		%{name}-perl5.8.patch
 # not ready for lp_solve 4.0
