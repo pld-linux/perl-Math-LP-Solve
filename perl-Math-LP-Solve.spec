@@ -9,7 +9,7 @@ Summary:	Math::LP::Solve - perl wrapper for the lp_solve linear program solver
 Summary(pl):	Math::LP::Solve - interfejs do biblioteki lp_solve, rozwi±zuj±cej problemy liniowe
 Name:		perl-Math-LP-Solve
 Version:	3.03
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -17,7 +17,7 @@ Patch0:		%{name}-system-lpk.patch
 # not ready for lp_solve 4.0
 BuildRequires:	lp_solve-devel = 3.2
 BuildRequires:	perl-devel >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,7 +37,8 @@ jest dostêpna w przestrzeni nazw Math::LP::Solve.
 %patch -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
@@ -54,10 +55,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%dir %{perl_sitearch}/Math/LP
-%dir %{perl_sitearch}/Math/LP/Solve.pm
-%dir %{perl_sitearch}/auto/Math/LP
-%dir %{perl_sitearch}/auto/Math/LP/Solve
-%{perl_sitearch}/auto/Math/LP/Solve/Solve.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Math/LP/Solve/Solve.so
+%dir %{perl_vendorarch}/Math/LP
+%dir %{perl_vendorarch}/Math/LP/Solve.pm
+%dir %{perl_vendorarch}/auto/Math/LP
+%dir %{perl_vendorarch}/auto/Math/LP/Solve
+%{perl_vendorarch}/auto/Math/LP/Solve/Solve.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Math/LP/Solve/Solve.so
 %{_mandir}/man3/*
