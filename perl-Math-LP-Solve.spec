@@ -17,7 +17,7 @@ Patch0:		%{name}-system-lpk.patch
 # not ready for lp_solve 4.0
 BuildRequires:	lp_solve-devel = 3.2
 BuildRequires:	perl-devel >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
