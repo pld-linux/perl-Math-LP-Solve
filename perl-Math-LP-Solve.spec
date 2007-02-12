@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	LP-Solve
 Summary:	Math::LP::Solve - Perl wrapper for the lp_solve linear program solver
-Summary(pl):	Math::LP::Solve - interfejs perlowy do biblioteki lp_solve, rozwi±zuj±cej problemy liniowe
+Summary(pl.UTF-8):   Math::LP::Solve - interfejs perlowy do biblioteki lp_solve, rozwiÄ…zujÄ…cej problemy liniowe
 Name:		perl-Math-LP-Solve
 Version:	3.03
 Release:	2
@@ -29,11 +29,11 @@ which solves linear and mixed linear/integer programs. Most functions
 and data structures in the file lpkit.h of the lp_solve distribution
 are made available in the Math::LP::Solve namespace.
 
-%description -l pl
+%description -l pl.UTF-8
 Math::LP::Solve to interfejs do darmowej biblioteki lp_solve,
-rozwi±zuj±cej problemy programowania liniowego i mieszane liniowo-
-ca³kowitoliczbowe. Wiêkszo¶æ funkcji i struktur danych z pliku lpkit.h
-jest dostêpna w przestrzeni nazw Math::LP::Solve.
+rozwiÄ…zujÄ…cej problemy programowania liniowego i mieszane liniowo-
+caÅ‚kowitoliczbowe. WiÄ™kszoÅ›Ä‡ funkcji i struktur danych z pliku lpkit.h
+jest dostÄ™pna w przestrzeni nazw Math::LP::Solve.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
