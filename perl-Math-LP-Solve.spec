@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	LP-Solve
 Summary:	Math::LP::Solve - Perl wrapper for the lp_solve linear program solver
-Summary(pl.UTF-8):   Math::LP::Solve - interfejs perlowy do biblioteki lp_solve, rozwiązującej problemy liniowe
+Summary(pl.UTF-8):	Math::LP::Solve - interfejs perlowy do biblioteki lp_solve, rozwiązującej problemy liniowe
 Name:		perl-Math-LP-Solve
 Version:	3.03
 Release:	2
