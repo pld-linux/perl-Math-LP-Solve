@@ -66,6 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/Math/LP/Solve.pm
 %dir %{perl_vendorarch}/auto/Math/LP
 %dir %{perl_vendorarch}/auto/Math/LP/Solve
-%{perl_vendorarch}/auto/Math/LP/Solve/Solve.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Math/LP/Solve/Solve.so
 %{_mandir}/man3/*
