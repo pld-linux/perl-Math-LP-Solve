@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Math
 %define		pnam	LP-Solve
 Summary:	Math::LP::Solve - Perl wrapper for the lp_solve linear program solver
